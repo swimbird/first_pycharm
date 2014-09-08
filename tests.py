@@ -4,9 +4,10 @@ class Island:
         self.opens = opens
         self.closes = closes
         self.next = next
-    
+
     def display(self):
-        print('name:{0} working time:{1}-{2}'.format(self.name, self.opens, self.closes))
+        print('name:{0} working time:{1}-{2}'
+              .format(self.name, self.opens, self.closes))
         if self.next:
             self.next.display()
 
